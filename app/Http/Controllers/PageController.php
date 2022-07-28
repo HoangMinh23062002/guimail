@@ -200,8 +200,7 @@ class PageController extends Controller
             foreach ($wishlists as $element) {																	
                 $element->delete();
             }
-        }
-        
+        }   
     }
 												
             // ----------- PAYMENT WITH VNPAY -----------
@@ -278,6 +277,9 @@ class PageController extends Controller
                 $email->subject('Thanh toán đơn hàng');
                 $email->to($emaill,"Shop bán bánh kẹo nè !!!");
             });
+        }
+        public function downloadPDF(){
+            
         }
 }
 
